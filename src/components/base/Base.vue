@@ -1,15 +1,19 @@
 <template>
-  <div>
-  </div>
+  <el-container class="main">
+    <el-aside>Aside</el-aside>
+    <el-main>Main</el-main>
+  </el-container>
 </template>
 
 <script lang="ts">
-import {Vue} from 'vue-property-decorator';
+import { Vue , Component } from 'vue-property-decorator';
 
+@Component
 export default class Base extends Vue {
+  constructor() {
+    super()
+  }
 }
 </script>
-
-<style scoped>
-
+<style lang="sass">
 </style>
